@@ -29,7 +29,6 @@ public class CustomerDriver {
                         int mob = Integer.parseInt(IO.readln("Enter Mobile Number : "));
 
                         dao.insertCustomer(id, name, location, mob);
-
                         break;
 
                     case 2:
@@ -40,20 +39,17 @@ public class CustomerDriver {
                         int umob = Integer.parseInt(IO.readln("Enter New Mobile Number : "));
 
                         dao.updateCustomer(uid, uname, ulocation, umob);
-
                         break;
 
                     case 3:
 
                         int did = Integer.parseInt(IO.readln("Enter Id : "));
                         dao.deleteCustomer(did);
-
                         break;
 
                     case 4:
 
                         dao.fetchCustomer();
-
                         break;   
 
                     case 5:
